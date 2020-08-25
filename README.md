@@ -1,2 +1,2 @@
 # jsConstructor
-**Link: https://artembilas.github.io/jsConstructor/**
+**Link: https://artembilas.github.io/js-site-constructor/**
