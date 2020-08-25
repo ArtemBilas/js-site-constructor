@@ -19,13 +19,22 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    background: rgb(238,174,202);
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
-.site-title{
-    border: 2px solid black;
+.site-logo{
+    border: 2px solid white;
     font-size: 2rem;
     font-weight: bold;
     padding: 10px;
-    
+}
+.site-logo__content{
+    display: flex;
+    align-items: center;
+}
+.site-title{
+    margin-left: 15px;
+    font-weight: bold;
 }
 .container-fluid {
     min-height: 100vh;
@@ -41,9 +50,39 @@ header{
     background: rgb(243, 243, 243);
     margin-right: 25px;
     border-radius: 5px;
+    padding:  25px;
+}
+.form{
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid #ffff;
+    text-align: center;
+}
+.form-input, .form-btn{
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.form-input{
+    background: #ffff;
+}
+.form-btn{
+    background: rgb(153, 153, 153);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form-btn:hover{
+    background: rgb(43, 109, 34) ;
 }
 .content {
     width: 80%;
+    border-left: 1px solid  rgb(236, 236, 236);
+    padding-left: 25px;
+    overflow-y: auto;
 }
 footer{
     margin: 15px 0 ;
@@ -55,13 +94,16 @@ footer{
     justify-content: space-around;
     align-items: center;
     border: 1px solid rgb(236, 236, 236);
+    background: rgb(238,174,202);
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
+
 .footer-title{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
- span{
+span{
     font-size: 2rem;
 }
 .footer-title > h5{

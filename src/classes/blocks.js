@@ -18,7 +18,7 @@ export class TitleBlock extends Block {
     }
 
     toHTML() {
-        const { styles, tag } = this.options
+        const { styles, tag = 'h2'} = this.options
         return row(col(`<${tag}>${this.value}</${tag}>`), styles)
     }
 }
@@ -54,7 +54,7 @@ export class TextColumnsBlock extends Block{
 
     toHTML() {
         const { styles } = this.options
-        const columnsStyle = 'border-radius: 5px; margin: 15px; padding: 15px; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);'
+        const columnsStyle = 'border-radius: 5px; margin: 15px; padding: 15px; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); background: rgb(34,195,191); background: linear-gradient(128deg, rgba(34,195,191,1) 0%, rgba(45,253,153,0.031232561383928603) 100%);'
         const html = this.value.map(item => col(item, columnsStyle))
 
         return row(html.join(''), styles)
